@@ -34,9 +34,9 @@ config config --local status.showUntrackedFiles no
 - Make zsh your default shell.
 - Install zsh plugins
     - Clone the following plugins into the directory `$HOME/.zsh_plugins` (create this directory if it does not exist):
-        - zsh-autosuggestions
-        - zsh-vim-mode
-        - zsh-syntax-highlighting
+        - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+        - [zsh-vim-mode](https://github.com/softmoth/zsh-vim-mode)
+        - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 - fzf comes with some nice shell extensions for zsh that require additional installation. See [here](https://github.com/junegunn/fzf#installation).
 - Open neovim (can simply use vi, the alias is defined in .zshrc) and install all plugins using `:PlugInstall.`
     - We manage plugins using [vim-plug](https://github.com/junegunn/vim-plug). 
