@@ -1,0 +1,29 @@
+# Inserts a blank line between shell prompts
+add_newline = false
+
+# Customize format
+format = """
+[┌───────────────────>](bold green)
+[│](bold green)$time$username$directory$git_branch
+([│](bold green)$python(cluster:${custom.tess_cluster})(ns:${custom.tess_ns}))
+[└─>](bold green) """
+
+[time]
+disabled = false
+
+[username]
+show_always = true
+
+[python]
+symbol = "[Python](bold fg:#306998 bg:#ffd43b) "
+
+# Custom Tess modules
+[custom.tess_cluster]
+command = "tess kubectl config get-contexts | awk '/^\\*/ {print $3}'"
+when = "command -v tess"
+style = "bold italic green"
+
+[custom.tess_ns]
+command = "tess kubectl config get-contexts | awk '/^\\*/ {print $5}'"
+when = "command -v tess"
+style = "bold italic green"
