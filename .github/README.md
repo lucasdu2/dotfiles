@@ -2,6 +2,7 @@
 **link refs:** 
 - [Dotfiles with a bare git repository](https://www.atlassian.com/git/tutorials/dotfiles)
 - [What is a bare git repository?](https://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/)
+- [Bare Repo Approach to Storing Home Directory Config Files](https://dev.to/bowmanjd/store-home-directory-config-files-dotfiles-in-git-using-bash-zsh-or-powershell-the-bare-repo-approach-35l3)
 
 ## Installing on a new system
 ### Cloning dotfiles
@@ -41,7 +42,7 @@ config config --local status.showUntrackedFiles no
 - fzf comes with some nice shell extensions for zsh that require additional installation. See [here](https://github.com/junegunn/fzf#installation).
 - Open neovim (can simply use vi, the alias is defined in `.zshrc`) and install all plugins using `:PlugInstall.`
     - We manage plugins using [vim-plug](https://github.com/junegunn/vim-plug). 
-    - We have configured automatic installation of vim-plug (see init.vim). However, if `:PlugInstall` does not work, you may need to install vim-plug manually. 
+    - We have configured automatic installation of vim-plug (see `init.vim`). However, if `:PlugInstall` does not work, you may need to install vim-plug manually. 
 - Also in neovim, run `:TSUpdate` to ensure all nvim-treesitter plugin (syntax highlighting) parsers are up-to-date. 
     - This should already be done automatically by our vim-plug configuration, but it's good to make sure.
 #### Language-specific configuration
