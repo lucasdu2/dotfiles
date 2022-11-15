@@ -26,9 +26,10 @@ config config --local status.showUntrackedFiles no
 - Ensure necessary programs/packages are installed and up-to-date:
     - neovim (text editor)
     - zsh (shell)
-    - starship (shell prompt) 
+    - [starship](https://starship.rs/) (shell prompt) 
     - fzf
     - ripgrep
+    - [kitty](https://github.com/kovidgoyal/kitty)[^1]
 - fzf comes with some nice shell extensions for zsh that require additional installation. See [here](https://github.com/junegunn/fzf#installation).
 - Open neovim (can simply use vi, the alias is defined in .zshrc) and install all plugins using `:PlugInstall.`
     - We manage plugins using [vim-plug](https://github.com/junegunn/vim-plug). 
@@ -44,6 +45,8 @@ These dotfiles also include language-specific tooling. Most should be handled by
     - Install [pyright](https://github.com/microsoft/pyright)
 - C
     - Install [clangd](https://clangd.llvm.org/installation.html)
-    - clangd relies on a JSON compilation database, specified as compile_commands.json (see [here](https://clangd.llvm.org/installation#compile_commandsjson))
-    - One way to generate this database is to use [bear](https://github.com/rizsotto/Bear)
+    - clangd relies on a JSON compilation database, specified as compile_commands.json (see [here](https://clangd.llvm.org/installation#compile_commandsjson)). One way to generate this database is to use [bear](https://github.com/rizsotto/Bear).
 
+[^1]: kitty is a terminal emulator. You only need to install it if your access to the system is such that a terminal emulator is necessary. 
+  For example, if you are setting up on a new personal machine, then kitty is a great terminal choice (these dotfiles provide configuration for it).
+  On the other hand, if you are SSH-ing into a remote machine, there's clearly no need to install another terminal. As a side note, kitty provides nice [SSH support](https://sw.kovidgoyal.net/kitty/kittens/ssh/).
