@@ -30,6 +30,7 @@ config config --local status.showUntrackedFiles no
     - [fzf](https://github.com/junegunn/fzf)
     - [ripgrep](https://github.com/BurntSushi/ripgrep)
     - [kitty](https://github.com/kovidgoyal/kitty)[^1] (terminal emulator)
+- Make zsh your default shell.
 - fzf comes with some nice shell extensions for zsh that require additional installation. See [here](https://github.com/junegunn/fzf#installation).
 - Open neovim (can simply use vi, the alias is defined in .zshrc) and install all plugins using `:PlugInstall.`
     - We manage plugins using [vim-plug](https://github.com/junegunn/vim-plug). 
